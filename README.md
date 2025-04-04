@@ -29,20 +29,14 @@ una sintaxis limpia y clara, lo que facilita el desarrollo y mantenimiento del c
 
 Para entender nuestro enfoque inicial lo plasmamos mediante un pequeño diagrama de flujo:
 
-Inicio
-   ↓
-Definir archivo CSV
-   ↓
-Crear instancia de LogicaTransaccion
-   ↓
-¿Archivo válido?
-   ↘ Sí → Leer archivo
-              ↓
-      ¿Lista contiene datos válidos?
-	  
-         ↘ Sí → Calcular y mostrar resultados
-		 
-   ↘ No → Mostrar error y Fin
+1. Inicio
+2. Definir archivo CSV
+3. Crear instancia de LogicaTransaccion
+4. ¿Archivo válido?
+   4.1. Sí -> Leer archivo
+   4.2. ¿Lista contiene datos válidos?
+	    4.2.1. Sí -> Calcular y mostrar resultados
+   4.3. No → Mostrar error y Fin
    
 - Para implementar nuestra lógica se usó la estructuras IF, asi como la instrucción FOREACH.
 - Tambien se creó varios métodos para poder reutilizar el código y no haya redundancias.
@@ -95,20 +89,14 @@ Otra opción para el desarrollo se consideró el lenguaje de programación JavaS
 
 Para entender nuestro enfoque inicial lo plasmamos mediante un pequeño diagrama de flujo:
 
-Inicio
-   ↓
-Definir archivo CSV
-   ↓
-Crear instancia de LogicaTransaccion
-   ↓
-¿Archivo válido?
-   ↘ Sí → Leer archivo
-              ↓
-      ¿Lista contiene datos válidos?
-	  
-         ↘ Sí → Calcular y mostrar resultados
-		 
-   ↘ No → Mostrar error y Fin
+1. Inicio
+2. Definir archivo CSV
+3. Crear instancia de LogicaTransaccion
+4. ¿Archivo válido?
+   4.1. Sí -> Leer archivo
+   4.2. ¿Lista contiene datos válidos?
+	    4.2.1. Sí -> Calcular y mostrar resultados
+   4.3. No → Mostrar error y Fin
    
 - Para implementar nuestra lógica se usó funciones de callback para leer archivos de manera asíncrona.
 - Se hace uso de forEach() para recorrer archivos y procesar cada línea de datos.
