@@ -1,19 +1,19 @@
 {
-  "name": "retomatrices",
+  "name": "Reto Técnico IBK",
   "version": "1.0.0",
   "description": "",
-  "main": "AppMatrices.js",
+  "main": "TransaccionesApp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cjmendieta/RETOMATRICES.git"
+    
   },
-  "author": "Clever Jose  Mendieta",
+  "author": "Rubén Jeiner  Mendieta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cjmendieta/RETOMATRICES/issues"
+    
   },
-  "homepage": "https://github.com/cjmendieta/RETOMATRICES#readme"
+  
 }
