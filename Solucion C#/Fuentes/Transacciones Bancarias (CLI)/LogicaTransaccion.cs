@@ -44,14 +44,16 @@ namespace Transacciones_Bancarias__CLI_
                 var lineas = File.ReadAllLines(filePath, System.Text.Encoding.UTF8).Skip(1); 
                 foreach (var linea in lineas)
                 {
+                    //Verifica si la variable linea no es null y no está vacía. Si contiene información, se continúa con la ejecución del bloque de código.
                     if (!string.IsNullOrEmpty(linea))
                     {
                         //Dividimos cada línea en partes
-                        string[] datos = linea.Split(';'); 
+                        string[] datos = linea.Split(';');
                         int id = Convert.ToInt32(datos[0]);
                         string tipo = datos[1];
                         decimal monto = Convert.ToDecimal(datos[2]);
 
+                        //Creamos un un nuevo objeto de la clase Datos, con las propiedades Id, Tipo y Monto, y se agrega a la lista transacciones.
                         transacciones.Add(new Datos { Id = id, Tipo = tipo, Monto = monto });
                     }
                 }
