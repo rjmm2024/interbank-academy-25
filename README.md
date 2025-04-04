@@ -1,66 +1,130 @@
 # Reto Técnico: Procesamiento de Transacciones Bancarias (CLI)
 
-## Objetivo:
+# PRIMERA SOLUCIÓN - Lenguaje de Programación C#
 
-Desarrolla una aplicación de línea de comandos (CLI) que procese un archivo CSV con transacciones bancarias y genere un reporte que incluya:
+* INTRODUCCIÓN: 
 
-- **Balance Final:**  
-  Suma de los montos de las transacciones de tipo "Crédito" menos la suma de los montos de las transacciones de tipo "Débito".
+El reto de este proyecto de programación de línea de comandos consiste en desarrollar una 
+aplicación que se ejecuta directamente en la consola, sin interfaz gráfica de usuario. 
+Su propósito es gestionar el procesamiento de transacciones bancarias, para lo cual se lee
+los datos desde un archivo CSV y se procesa la información para hacer cálculos y dar como resultado: 
+El Balance Final, la transacción de Mayor Monto y el Conteo de Transacciones.
+Para el desarrollo de esta aplicación se eligió el lenguaje de programación C# ya que es robusto con 
+una sintaxis limpia y clara, lo que facilita el desarrollo y mantenimiento del código.
 
-- **Transacción de Mayor Monto:**  
-  Identificar el ID y el monto de la transacción con el valor más alto.
 
-- **Conteo de Transacciones:**  
-  Número total de transacciones para cada tipo ("Crédito" y "Débito").
+* INSTRUCCIONES DE EJECUCIÓN:
 
----
+1. Entorno de Ejecución
+   - Instalar .NET Runtime
+2. Compilador
+   - SDK 8
+3. Sistema Operativo
+   Windows, Linux, MacOS
+4. Ejecutar
+   EN caso de Windows, en la aplicación se adjunta con la aplicación ya compilada en la cual se 
+   ejecuta el archivo Transacciones Bancarias (CLI).exe
 
-## Instrucciones
+* ENFOQUE Y SOLUCIÓN:
 
-1. **Repositorio Base:**  
-   Clona o haz un fork del repositorio base disponible en:  
-   `https://github.com/codeableorg/interbank-academy-25`
+Para entender nuestro enfoque inicial lo plasmamos mediante un pequeño diagrama de flujo:
 
-2. **Entrada de Datos:**  
-   La aplicación deberá leer un archivo CSV. Ejemplo de contenido:
+Inicio
+   ↓
+Definir archivo CSV
+   ↓
+Crear instancia de LogicaTransaccion
+   ↓
+¿Archivo válido?
+   ↘ Sí → Leer archivo
+              ↓
+      ¿Lista contiene datos válidos?
+	  
+         ↘ Sí → Calcular y mostrar resultados
+		 
+   ↘ No → Mostrar error y Fin
+   
+- Para implementar nuestra lógica se usó la estructuras IF, asi como la instrucción FOREACH.
+- Tambien se creó varios métodos para poder reutilizar el código y no haya redundancias.
+- En la gestión de excepciones usamos TRY-CATCH para el manejo de errores.
+- Para una mayor eficiencia y reducción de código se usó LINQ en las principales operaciones.
 
-   ```
-   id,tipo,monto
-   1,Crédito,100.00
-   2,Débito,50.00
-   3,Crédito,200.00
-   4,Débito,75.00
-   5,Crédito,150.00
-   ```
+En la desición de diseño se hizo la implementación utilizando los patrones de diseño de N capas en las cuales 
+se implementan el uso decisiones, tambien se usa los principios de SOLID, para que la aplicación sea sincilla 
+de entender, facil de mantener, escalable y fácil de desacoplar las funcionalidades.
+En este caso como la aplicacion requiere leer archivos, se implementa una clase lógica para las validaciones,
+lecturas y demás operaciones, de tal manera que la aplicación pueda consumir las funcionalidades las cuales están 
+separadas para un mejor control de errores.
+Tambien se usa la programación orientada a objetos.
 
-3. **Salida del Programa:**  
-   La aplicación debe mostrar el reporte final en la terminal.  
-   Ejemplo de salida:
+* ESTRUCTURA DEL PROYECTO:
 
-   ```
-   Reporte de Transacciones
-   ---------------------------------------------
-   Balance Final: 325.00
-   Transacción de Mayor Monto: ID 3 - 200.00
-   Conteo de Transacciones: Crédito: 3 Débito: 2
-   ```
+Se ha creado una aplicación de consola en la cual se implementan 3 capas:
+- DATOS
+  Para el manejo de la estructura de los datos que se cargarán del archivo (Datos.cs)
+- LÓGICA
+  Tambien se incluye una capa para el manejo de la logica de la aplicacion (LogicaTransaccion.cs) con el fin de centralizar todas
+  las operaciones necesarias para las validaciones, cálculos, se puedan reutilizar en cualquier tipo de aplicacion
+  y se tenga una correcta gestión de los errores.
+- APLICACION
+  Finalmente la capa de la aplicacion (Transacción.cs) en la que se crea el componente que será encargado
+  de ejecutar las operaciones creadas en la capa lógica. Se mostrará los resultados según el formato que se solicitó 
+  en el ejercicio
 
-4. **Lenguaje de Programación:**  
-   Utiliza el lenguaje de tu preferencia. Opciones recomendadas:
 
-   - Python
-   - Java
-   - C#
-   - JavaScript (Node.js)
+# SEGUNDA SOLUCIÓN - Lenguaje de Programación JavaScript
 
-5. **README del Proyecto:**  
-   Incluye un archivo `README.md` con la siguiente estructura:
+* INTRODUCCIÓN: 
 
-   - **Introducción:** Breve descripción del reto y su propósito.
-   - **Instrucciones de Ejecución:** Cómo instalar dependencias y ejecutar la aplicación.
-   - **Enfoque y Solución:** Lógica implementada y decisiones de diseño.
-   - **Estructura del Proyecto:** Archivos y carpetas principales.
+El reto de este proyecto de programación de línea de comandos consiste en desarrollar una 
+aplicación que se ejecuta directamente en la consola, sin interfaz gráfica de usuario. 
+Su propósito es gestionar el procesamiento de transacciones bancarias, para lo cual se lee
+los datos desde un archivo CSV y se procesa la información para hacer cálculos y dar como resultado: 
+El Balance Final, la transacción de Mayor Monto y el Conteo de Transacciones.
+Otra opción para el desarrollo se consideró el lenguaje de programación JavaScript .
 
-6. **Documentación y Calidad del Código:**
-   - Código bien documentado y fácil de leer.
-   - Comentarios explicando pasos clave y lógica del programa.
+
+* INSTRUCCIONES DE EJECUCIÓN:
+
+1.- verificar previamente tener instalado node js <br />
+2.- clonar repositorio de la rama main <br />
+3.- ejecutar el comando => npm intall <br />
+4.- ejecutar el comando => node ./Transacciones/TransaccionesApp.js <br />
+
+* ENFOQUE Y SOLUCIÓN:
+
+Para entender nuestro enfoque inicial lo plasmamos mediante un pequeño diagrama de flujo:
+
+Inicio
+   ↓
+Definir archivo CSV
+   ↓
+Crear instancia de LogicaTransaccion
+   ↓
+¿Archivo válido?
+   ↘ Sí → Leer archivo
+              ↓
+      ¿Lista contiene datos válidos?
+	  
+         ↘ Sí → Calcular y mostrar resultados
+		 
+   ↘ No → Mostrar error y Fin
+   
+- Para implementar nuestra lógica se usó funciones de callback para leer archivos de manera asíncrona.
+- Se hace uso de forEach() para recorrer archivos y procesar cada línea de datos.
+- Se hace el uso de métodos para filtrar, recorrer y calcular valores de las listas.
+- Se hace la validación de datos antes de su procesamiento
+- Cada transacción se almacena como un objeto, mejorando la estructura y accesibilidad de datos.
+
+En la desición de diseño se divide la funcionalidad en distintas funciones 
+(leerArchivo(), fnCalcularBalanceFinal(), fnCalcularCatidadTipo, fnCalularDatoMayorValor(), fnMonstrarDatos()), 
+lo que facilita el mantenimiento y la reutilización del código.
+Se usó programación secuencial mediante la cual se detalla la ejecución paso a paso.
+
+* ESTRUCTURA DEL PROYECTO:
+- Lectura y carga de datos en un solo componente
+- La lógica de los cálculos se implementaron en funciones separadas
+- No se creó una aplicacion adicional ya que los resultados se mostraron solo en consola.
+
+
+

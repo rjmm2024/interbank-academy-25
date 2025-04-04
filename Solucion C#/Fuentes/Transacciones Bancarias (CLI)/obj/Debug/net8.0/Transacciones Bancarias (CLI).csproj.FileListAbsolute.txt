@@ -1,0 +1,14 @@
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\bin\Debug\net8.0\Transacciones Bancarias (CLI).exe
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\bin\Debug\net8.0\Transacciones Bancarias (CLI).deps.json
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\bin\Debug\net8.0\Transacciones Bancarias (CLI).runtimeconfig.json
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\bin\Debug\net8.0\Transacciones Bancarias (CLI).dll
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\bin\Debug\net8.0\Transacciones Bancarias (CLI).pdb
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).AssemblyInfoInputs.cache
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).AssemblyInfo.cs
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).csproj.CoreCompileInputs.cache
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).dll
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\refint\Transacciones Bancarias (CLI).dll
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).pdb
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\Transacciones Bancarias (CLI).genruntimeconfig.cache
+C:\Users\RJMM\source\repos\Transacciones Bancarias (CLI)\Transacciones Bancarias (CLI)\obj\Debug\net8.0\ref\Transacciones Bancarias (CLI).dll
